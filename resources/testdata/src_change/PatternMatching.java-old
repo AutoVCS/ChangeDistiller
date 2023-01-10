@@ -1,0 +1,27 @@
+package edu.ncsu.csc216.wolf_scheduler.course;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.params.provider.NullAndEmptySource;
+import org.junit.jupiter.params.provider.ValueSource;
+
+
+public class CourseTest {
+
+    public static double getPerimeter(Shape shape) throws IllegalArgumentException {
+        if (shape instanceof Rectangle r) {
+            return 2 * r.length() + 2 * r.width();
+        }
+		else if (shape instanceof Circle c) {
+            return 2 * c.radius() * Math.PI;
+        }
+		else {
+            throw new IllegalArgumentException("Unrecognized shape");
+        }
+    }
+
+    
+}

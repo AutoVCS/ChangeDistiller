@@ -1,0 +1,34 @@
+package edu.ncsu.csc216.wolf_scheduler.course;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.params.provider.NullAndEmptySource;
+import org.junit.jupiter.params.provider.ValueSource;
+
+
+public class CourseTest {
+
+    @NotNull
+	@Length(5)
+    String myString;
+	
+	@NotNull
+	String aNewStringOneAnnotation;
+	
+	@NotNull
+	Integer hasAnAnnotationNow;
+	
+	@Test(expected=Exception.class)
+	public void testMethodAnnotation() {
+	    Object statementInMethod = null;
+	}
+	
+	@Entity
+	private class InnerClass{
+	
+    }
+    
+}
